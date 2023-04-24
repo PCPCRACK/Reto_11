@@ -19,9 +19,9 @@ if __name__ == "__main__":
   ones = []
   twos = []
   sum = int(0)
-  for j in range(nFilas):
-      for i in range(nCols):
-        n = int(input(f"valores columna {i+1}, fila {j+1}: "))
+  for j in range(nCols):
+      for i in range(nFilas):
+        n = int(input(f"valores {i+1},{j+1}: "))
         sum += (n)
         ones.append(n)
       twos.append(ones)
