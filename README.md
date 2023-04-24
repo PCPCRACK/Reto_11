@@ -32,3 +32,26 @@ if __name__ == "__main__":
 ```
 5. Desarrollar un programa que sume los elementos de una fila dada de
 una matriz.
+```python
+def imprimirMatriz(mat):
+  for i in range(len(mat)):
+      print(mat[i])
+  
+
+if __name__ == "__main__":
+  nFilas = int(input("Ingrese filas: "))
+  nCols = int(input("Ingrese columnas: "))
+  ones = []
+  twos = []
+  sum = int(0)
+  for j in range(nFilas):
+      for i in range(nCols):
+        n = int(input(f"valores {i+1},{j+1}: "))
+        sum += (n)
+        ones.append(n)
+      twos.append(ones)
+      print(f"suma columna {j+1} es {sum} ")
+      ones = []
+      sum = 0
+  imprimirMatriz(twos)
+```
