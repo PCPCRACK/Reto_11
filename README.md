@@ -50,6 +50,6 @@ if __name__ == "__main__":
     for i in range(li):
         for fila in m:
             sum += fila[i]
-        print(f"suma columna {i+1} es {sum}")
+        print(f"suma fila {i+1} es {sum}")
         sum = 0
 ```
