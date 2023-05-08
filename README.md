@@ -8,32 +8,6 @@
 
 4. Desarrollar un programa que sume los elementos de una columna dada de una matriz.
 ```python
-def imprimirMatriz(mat):
-  for i in range(len(mat)):
-      print(mat[i])
-  
-
-if __name__ == "__main__":
-  nFilas = int(input("Ingrese filas: "))
-  nCols = int(input("Ingrese columnas: "))
-  ones = []
-  twos = []
-  tresh = []
-  sum = int(0)
-  for j in range(nFilas):
-      for i in range(nCols):
-        n = int(input(f"valores fila {i+1} columna {j+1}: "))
-        sum += (n)
-        ones.append(n)
-      twos.append(ones)
-      print(f"suma columna {j+1} es {sum} ")
-      ones = []
-      sum = 0
-  imprimirMatriz(twos)
-```
-5. Desarrollar un programa que sume los elementos de una fila dada de
-una matriz.
-```python
 if __name__ == "__main__":
     la = int(input("Ingrese filas: "))
     li = int(input("Ingrese columnas: "))
@@ -50,11 +24,12 @@ if __name__ == "__main__":
     for i in range(li):
         for fila in m:
             sum += fila[i]
-        print(f"suma fila {i+1} es {sum}")
+        print(f"suma columna {i+1} es {sum}")
         sum = 0
+
 ```
-
-
+5. Desarrollar un programa que sume los elementos de una fila dada de
+una matriz.
 ```python
 # Definimos una funcion
 def imprimirMatriz(mat):
