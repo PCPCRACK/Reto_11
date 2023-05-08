@@ -53,3 +53,61 @@ if __name__ == "__main__":
         print(f"suma fila {i+1} es {sum}")
         sum = 0
 ```
+
+
+```python
+# Definimos una funcion
+def imprimirMatriz(mat):
+
+    # Establecemos un ciclo del tamaño del arreglo mat
+    for i in range(len(mat)):
+
+        # Imprime el valor de mat
+        print(mat[i])
+  
+
+if __name__ == "__main__":
+
+    # Estable el tamaño de las filas
+    nFilas = int(input("Ingrese filas: "))
+
+    # Estable el tamaño de las columnas
+    nCols = int(input("Ingrese columnas: "))
+
+    # Crea dos listas vacias
+    ones = []
+    twos = []
+
+    # Define sum igual a cero como entero
+    sum = int(0)
+
+    # Establecemos un ciclo del tamaño nFilas
+    for j in range(nFilas):
+
+        # Establecemos un ciclo del tamaño nCols
+        for i in range(nCols):
+
+            # Establece n como el numero ingresado
+            n = int(input(f"valores fila {i+1} columna {j+1}: "))
+
+            # Aa variable sum agrega el valor de n
+            sum += (n)
+
+            # Añade el valor de n a la lista ones
+            ones.append(n)
+
+        # Añade la lista ones a la lista twos al terminar el ciclo for
+        twos.append(ones)
+
+        # Imprime la suma fila
+        print(f"suma fila {j+1} es {sum} ")
+
+        # Vacia la lista ones
+        ones = []
+
+        # Establece sum igual a cero
+        sum = 0
+
+    # Al finalizar los dos ciclos llama la funcion
+    imprimirMatriz(twos)
+```
