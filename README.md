@@ -88,7 +88,7 @@ if __name__ == "__main__":
         for i in range(nCols):
 
             # Establece n como el numero ingresado
-            n = int(input(f"valores fila {i+1} columna {j+1}: "))
+            n = int(input(f"valores columna {i+1} fila {j+1}: "))
 
             # Aa variable sum agrega el valor de n
             sum += (n)
