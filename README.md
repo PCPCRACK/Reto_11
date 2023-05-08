@@ -9,24 +9,55 @@
 4. Desarrollar un programa que sume los elementos de una columna dada de una matriz.
 ```python
 if __name__ == "__main__":
+
+    # Pide la cantidad de filas y columnas al usuario
     la = int(input("Ingrese filas: "))
     li = int(input("Ingrese columnas: "))
-    m = []
-    for i in range(la):
-        fila = []
-        for j in range(li):
-            n=int(input(f"valores fila {i+1} columna {j+1}: "))
-            fila.append(n)
-        m.append(fila)
-    for fila in m:
-        print(fila)
-    sum = int(0)
-    for i in range(li):
-        for fila in m:
-            sum += fila[i]
-        print(f"suma columna {i+1} es {sum}")
-        sum = 0
 
+    # Crea una lista vacia
+    m = []
+
+    # Establece un ciclo con el valor de la
+    for i in range(la):
+
+        # Crea una lista vacia
+        fila = []
+
+        # Establece un ciclo con el valor de li
+        for j in range(li):
+
+            # Pide los valores de n dado fila y columna
+            n=int(input(f"valores fila {i+1} columna {j+1}: "))
+
+            # Añade el valor n a la lista fila
+            fila.append(n)
+
+        # Añade la lista fila a la lista m
+        m.append(fila)
+
+    # Establece un ciclo en el tamaño de la lista m
+    for fila in m:
+
+        # Imprime el valor fila
+        print(fila)
+
+    # Estable sum igual a cero como entero
+    sum = int(0)
+
+    # Establece un ciclo con el valor de li
+    for i in range(li):
+
+        # Establece un ciclo en el tamaño de la lista m
+        for fila in m:
+
+            # Suma el valor de fila[i] en la variable sum
+            sum += fila[i]
+
+        # Imprime la suma de la columna
+        print(f"suma columna {i+1} es {sum}")
+
+        # Establece sum con valor igual a cero
+        sum = 0
 ```
 5. Desarrollar un programa que sume los elementos de una fila dada de
 una matriz.
