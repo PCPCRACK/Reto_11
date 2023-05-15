@@ -1,7 +1,50 @@
 # Reto_11
 
 1. Desarrolle un programa que permita realizar la [suma/resta de matrices](https://es.wikipedia.org/wiki/Adici%C3%B3n_matricial). El programa debe validar las condiciones necesarias para ejecutar la operación.
+```
 
+if __name__ == "__main__":
+
+    # Pide numero de filas y de columnas
+    t1 = int(input("Ingresa el numero de filas: "))
+    t2 = int(input("Ingresa el numero de columnas: "))
+
+    # Cre una lista vacia
+    t3 = []
+
+    # Establece el numero de matrices
+    t4 = 2
+
+    # crea un bucle con el rango de t4
+    for x in range(t4):
+
+        # Crea una lista vacia
+        t5 = []
+
+        # crea un bucle con el rango de t1
+        for y in range(t1):
+
+            # Crea una lista vacia
+            t6 = []
+
+            # crea un bucle con el rango de t2
+            for z in range(t2):
+
+                # Pide un valor y lo vuelve flotante
+                t7 = float(input(f"Matriz [{x+1}] fila [{y+1}] columna [{z+1}]: "))
+
+                # Añade el flotante a la lista t6
+                t6.append(t7)
+
+            # Añade la lista t6 a la lista t5
+            t5.append(t6)
+
+        # Añade la lista t5 a la lista t3    
+        t3.append(t5)
+    # Recorre la lista las dos sublistas de t3 a la vez
+    for y in range(t2):
+        print((t3[0][y]),(t3[1][y]))
+```
 2. Desarrolle un programa que permita realizar el [producto de matrices](https://es.wikipedia.org/wiki/Multiplicaci%C3%B3n_de_matrices). El programa debe validar las condiciones necesarias para ejecutar la operación.
 
 3. Desarrolle un programa que permita obtener la  [matriz transpuesta](https://es.wikipedia.org/wiki/Matriz_transpuesta) de una matriz ingresada. El programa debe validar las condiciones necesarias para ejecutar la operación.
