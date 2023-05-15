@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
         # Añade la lista t5 a la lista t3    
         t3.append(t5)
-    # Recorre la lista las dos sublistas de t3 a la vez
+    # Recorre las dos sublistas de t3 a la vez
     for y in range(t2):
         print((t3[0][y]),(t3[1][y]))
 ```
