@@ -1,8 +1,7 @@
 # Reto_11
 
 1. Desarrolle un programa que permita realizar la [suma/resta de matrices](https://es.wikipedia.org/wiki/Adici%C3%B3n_matricial). El programa debe validar las condiciones necesarias para ejecutar la operación.
-```
-
+```python
 if __name__ == "__main__":
 
     # Pide numero de filas y de columnas
