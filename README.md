@@ -100,12 +100,10 @@ if __name__ == "__main__":
         # Añade la lista t5 a la lista t3    
         t3.append(t5)
 
-    if t1 > t2:
+
     # Llama a la Santa inquisicion que es una funcion
-        Santa_inquisicion(t1,t3,t4)
-    else:
-        Santa_inquisicion(t1,t3,t4)
-        
+    Santa_inquisicion(t1,t3,t4)
+ 
     t8 = []
     t11 = float(0)
     for x in range(t1):
