@@ -100,24 +100,34 @@ if __name__ == "__main__":
         # Añade la lista t5 a la lista t3    
         t3.append(t5)
 
+    if t1 > t2:
     # Llama a la Santa inquisicion que es una funcion
-    Santa_inquisicion(t2,t3,t4)
-
+        Santa_inquisicion(t1,t3,t4)
+    else:
+        Santa_inquisicion(t1,t3,t4)
+        
     t8 = []
     t11 = float(0)
-    for x in range(t2):
+    for x in range(t1):
         t9 = []
-        for y in range(t1):
+        for y in range(t2):
             t10 = []
             for z in range(t4):
-                t11 += (t3[z][y][x])
-                t10.append(t11)
-            t9.append(t10)
+                t11 += (t3[z][x][y])
+
+            t10.append(t11)
             t11 = 0
+            t9.append(t10)
+        
+            
         t8.append(t9)
 
-    for y in range(t2):
-        print((t8[0][y]))
+    
+    print(" ")
+    print(" ")
+    
+    for y in range(t1):
+        print((t8[y]))
 ```
 2. Desarrolle un programa que permita realizar el [producto de matrices](https://es.wikipedia.org/wiki/Multiplicaci%C3%B3n_de_matrices). El programa debe validar las condiciones necesarias para ejecutar la operación.
 
