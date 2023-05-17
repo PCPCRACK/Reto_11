@@ -2,6 +2,64 @@
 
 1. Desarrolle un programa que permita realizar la [suma/resta de matrices](https://es.wikipedia.org/wiki/Adici%C3%B3n_matricial). El programa debe validar las condiciones necesarias para ejecutar la operación.
 ```python
+# Funcion para imprimir las matrices
+def Santa_inquisicion(t2,t3,t4):
+    """
+        trae consigo los valores de t2 que es el numero de cloumnas,t3 que es las matrices y t4 que es el numero de matrices,
+        para compara con un condicional if el valor de t4 para validar que print utilizar y que no de error el codigo, en tal
+        caso tiene hasta un limite de 15 matrices sino retorna 0
+    """
+    
+    if t4 == 1:
+        for y in range(t2):
+            print((t3[0][y]))
+    elif t4 == 2:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]))
+    elif t4 == 3:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]))
+    elif t4 == 4:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]))
+    elif t4 == 5:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]))
+    elif t4 == 6:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]))
+    elif t4 == 7:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]))
+    elif t4 == 8:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]))
+    elif t4 == 9:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]))
+    elif t4 == 10:
+        for y in range(t2):    
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]))
+    elif t4 == 11:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]))
+    elif t4 == 12:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]))
+    elif t4 == 13:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]),(t3[12][y]))
+    elif t4 == 14:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]),(t3[12][y]),(t3[13][y]))
+    elif t4 == 15:
+        for y in range(t2):
+            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]),(t3[12][y]),(t3[13][y]),(t3[14][y]))
+    else:
+        return
+    return
+
+
 if __name__ == "__main__":
 
     # Pide numero de filas y de columnas
@@ -12,8 +70,9 @@ if __name__ == "__main__":
     t3 = []
 
     # Establece el numero de matrices
-    t4 = 2
-
+    t4 = int(input("numero de matrices: "))
+    
+    
     # crea un bucle con el rango de t4
     for x in range(t4):
 
@@ -40,9 +99,25 @@ if __name__ == "__main__":
 
         # Añade la lista t5 a la lista t3    
         t3.append(t5)
-    # Recorre las dos sublistas de t3 a la vez
+
+    # Llama a la Santa inquisicion que es una funcion
+    Santa_inquisicion(t2,t3,t4)
+
+    t8 = []
+    t11 = float(0)
+    for x in range(t2):
+        t9 = []
+        for y in range(t1):
+            t10 = []
+            for z in range(t4):
+                t11 += (t3[z][y][x])
+                t10.append(t11)
+            t9.append(t10)
+            t11 = 0
+        t8.append(t9)
+
     for y in range(t2):
-        print((t3[0][y]),(t3[1][y]))
+        print((t8[0][y]))
 ```
 2. Desarrolle un programa que permita realizar el [producto de matrices](https://es.wikipedia.org/wiki/Multiplicaci%C3%B3n_de_matrices). El programa debe validar las condiciones necesarias para ejecutar la operación.
 
