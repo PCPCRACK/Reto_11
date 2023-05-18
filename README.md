@@ -5,10 +5,16 @@
 # Funcion para imprimir las matrices
 def Santa_inquisicion(t2,t3,t4):
     """
+        Asi es toco hacer la funcion al modo anti-pro osea como noob.
+        esto solo es para visualizar la matriz, en caso de que la matriz sea mayor a 15 se no se mostrara las matrices originales.
         trae consigo los valores de t2 que es el numero de cloumnas,t3 que es las matrices y t4 que es el numero de matrices,
         para compara con un condicional if el valor de t4 para validar que print utilizar y que no de error el codigo, en tal
         caso tiene hasta un limite de 15 matrices sino retorna 0
     """
+
+    # Imprime un doble espacio para diferenciar las matrices
+    print(" ")
+    print(" ")
     
     if t4 == 1:
         for y in range(t2):
@@ -57,7 +63,6 @@ def Santa_inquisicion(t2,t3,t4):
             print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]),(t3[12][y]),(t3[13][y]),(t3[14][y]))
     else:
         return
-    return
 
 
 if __name__ == "__main__":
@@ -66,12 +71,16 @@ if __name__ == "__main__":
     t1 = int(input("Ingresa el numero de filas: "))
     t2 = int(input("Ingresa el numero de columnas: "))
 
-    # Cre una lista vacia
+    # Crea una lista vacia
     t3 = []
 
     # Establece el numero de matrices
     t4 = int(input("numero de matrices: "))
-    
+
+    # Pide la operacion a realizar
+    t12 = str(input("presione S para sumar la matriz y R para restar la matriz: "))
+
+
     
     # crea un bucle con el rango de t4
     for x in range(t4):
@@ -103,27 +112,91 @@ if __name__ == "__main__":
 
     # Llama a la Santa inquisicion que es una funcion
     Santa_inquisicion(t1,t3,t4)
- 
-    t8 = []
-    t11 = float(0)
-    for x in range(t1):
-        t9 = []
-        for y in range(t2):
-            t10 = []
-            for z in range(t4):
-                t11 += (t3[z][x][y])
 
-            t10.append(t11)
-            t11 = 0
-            t9.append(t10)
-        
-            
-        t8.append(t9)
+    # Busca si en t12 hay una s
+    if "s" in t12:
 
-    
+        # Crea una lista vacia
+        t8 = []
+
+        # Define un flotante con valor 0
+        t11 = float(0)
+
+        # Bucle for en el rango de t1
+        for x in range(t1):
+
+            # Crea una lista vacia
+            t9 = []
+
+            # Bucle for en el rango de t2
+            for y in range(t2):
+
+                # Crea una lista vacia
+                t10 = []
+
+                # Bucle for en el rango de t4
+                for z in range(t4):
+
+                    # Suma el valor de t3 con respecto a los bucles for (x,y,z)
+                    t11 += (t3[z][x][y])
+
+                # Añade t11 a la lista t10
+                t10.append(t11)
+
+                # Restablece el valor de t11 a cero
+                t11 = 0
+
+                # Añade t10 a la lista t9   
+                t9.append(t10)    
+
+            # Añade t9 a la lista t8
+            t8.append(t9)
+    else:
+
+        # Crea una lista vacia
+        t8 = []
+
+        # Define un flotante con valor 0
+        t11 = float(0)
+
+        # Bucle for en el rango de t1
+        for x in range(t1):
+
+            # Crea una lista vacia
+            t9 = []
+
+            # Bucle for en el rango de t2
+            for y in range(t2):
+
+                # Crea una lista vacia
+                t10 = []
+
+                # Bucle for en el rango de t4
+                for z in range(t4):
+
+                    # Resta el valor de t3 con respecto a los bucles for (x,y,z)
+                    t11 -= (t3[z][x][y])
+
+                # Añade el valor del numero de la primera matriz mulplicado por dos, debido que al entrar al bucle se resta
+                t11 += 2*(t3[0][x][y])
+
+                # Añade t11 a la lista t10
+                t10.append(t11)
+
+                # Restablece el valor de t11 a cero
+                t11 = 0
+
+                # Añade t10 a la lista t9
+                t9.append(t10)    
+
+            # Añade t9 a la lista t8
+            t8.append(t9)
+
+    # Imprime un doble espacio para diferenciar las matrices
     print(" ")
     print(" ")
-    
+
+    # Imprime la matriz t8 en filas
     for y in range(t1):
         print((t8[y]))
 ```
