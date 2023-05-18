@@ -80,8 +80,6 @@ if __name__ == "__main__":
     # Pide la operacion a realizar
     Peach_understand = str(input("presione S para sumar la matriz y R para restar la matriz: "))
 
-
-    
     # crea un bucle con el rango de And_with_my_star_were_gonna_rule
     for x in range(And_with_my_star_were_gonna_rule):
 
