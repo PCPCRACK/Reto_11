@@ -3,12 +3,12 @@
 1. Desarrolle un programa que permita realizar la [suma/resta de matrices](https://es.wikipedia.org/wiki/Adici%C3%B3n_matricial). El programa debe validar las condiciones necesarias para ejecutar la operación.
 ```python
 # Funcion para imprimir las matrices
-def Santa_inquisicion(t2,t3,t4):
+def Santa_inquisicion(Princess_Peach,Peach,_youre_so_cool,And_with_my_star_were_gonna_rule):
     """
         Asi es toco hacer la funcion al modo anti-pro osea como noob.
         esto solo es para visualizar la matriz, en caso de que la matriz sea mayor a 15 se no se mostrara las matrices originales.
-        trae consigo los valores de t2 que es el numero de cloumnas,t3 que es las matrices y t4 que es el numero de matrices,
-        para compara con un condicional if el valor de t4 para validar que print utilizar y que no de error el codigo, en tal
+        trae consigo los valores de Princess_Peach que es el numero de filas,Peach,_youre_so_cool que es las matrices y And_with_my_star_were_gonna_rule que es el numero de matrices,
+        para compara con un condicional if el valor de And_with_my_star_were_gonna_rule para validar que print utilizar y que no de error el codigo, en tal
         caso tiene hasta un limite de 15 matrices sino retorna 0
     """
 
@@ -16,51 +16,51 @@ def Santa_inquisicion(t2,t3,t4):
     print(" ")
     print(" ")
     
-    if t4 == 1:
-        for y in range(t2):
-            print((t3[0][y]))
-    elif t4 == 2:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]))
-    elif t4 == 3:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]))
-    elif t4 == 4:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]))
-    elif t4 == 5:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]))
-    elif t4 == 6:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]))
-    elif t4 == 7:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]))
-    elif t4 == 8:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]))
-    elif t4 == 9:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]))
-    elif t4 == 10:
-        for y in range(t2):    
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]))
-    elif t4 == 11:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]))
-    elif t4 == 12:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]))
-    elif t4 == 13:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]),(t3[12][y]))
-    elif t4 == 14:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]),(t3[12][y]),(t3[13][y]))
-    elif t4 == 15:
-        for y in range(t2):
-            print((t3[0][y]),(t3[1][y]),(t3[2][y]),(t3[3][y]),(t3[4][y]),(t3[5][y]),(t3[6][y]),(t3[7][y]),(t3[8][y]),(t3[9][y]),(t3[10][y]),(t3[11][y]),(t3[12][y]),(t3[13][y]),(t3[14][y]))
+    if And_with_my_star_were_gonna_rule == 1:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]))
+    elif And_with_my_star_were_gonna_rule == 2:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]))
+    elif And_with_my_star_were_gonna_rule == 3:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]))
+    elif And_with_my_star_were_gonna_rule == 4:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]))
+    elif And_with_my_star_were_gonna_rule == 5:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]))
+    elif And_with_my_star_were_gonna_rule == 6:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]))
+    elif And_with_my_star_were_gonna_rule == 7:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]))
+    elif And_with_my_star_were_gonna_rule == 8:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]))
+    elif And_with_my_star_were_gonna_rule == 9:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]),(Peach,_youre_so_cool[8][y]))
+    elif And_with_my_star_were_gonna_rule == 10:
+        for y in range(Princess_Peach):    
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]),(Peach,_youre_so_cool[8][y]),(Peach,_youre_so_cool[9][y]))
+    elif And_with_my_star_were_gonna_rule == 11:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]),(Peach,_youre_so_cool[8][y]),(Peach,_youre_so_cool[9][y]),(Peach,_youre_so_cool[10][y]))
+    elif And_with_my_star_were_gonna_rule == 12:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]),(Peach,_youre_so_cool[8][y]),(Peach,_youre_so_cool[9][y]),(Peach,_youre_so_cool[10][y]),(Peach,_youre_so_cool[11][y]))
+    elif And_with_my_star_were_gonna_rule == 13:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]),(Peach,_youre_so_cool[8][y]),(Peach,_youre_so_cool[9][y]),(Peach,_youre_so_cool[10][y]),(Peach,_youre_so_cool[11][y]),(Peach,_youre_so_cool[12][y]))
+    elif And_with_my_star_were_gonna_rule == 14:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]),(Peach,_youre_so_cool[8][y]),(Peach,_youre_so_cool[9][y]),(Peach,_youre_so_cool[10][y]),(Peach,_youre_so_cool[11][y]),(Peach,_youre_so_cool[12][y]),(Peach,_youre_so_cool[13][y]))
+    elif And_with_my_star_were_gonna_rule == 15:
+        for y in range(Princess_Peach):
+            print((Peach,_youre_so_cool[0][y]),(Peach,_youre_so_cool[1][y]),(Peach,_youre_so_cool[2][y]),(Peach,_youre_so_cool[3][y]),(Peach,_youre_so_cool[4][y]),(Peach,_youre_so_cool[5][y]),(Peach,_youre_so_cool[6][y]),(Peach,_youre_so_cool[7][y]),(Peach,_youre_so_cool[8][y]),(Peach,_youre_so_cool[9][y]),(Peach,_youre_so_cool[10][y]),(Peach,_youre_so_cool[11][y]),(Peach,_youre_so_cool[12][y]),(Peach,_youre_so_cool[13][y]),(Peach,_youre_so_cool[14][y]))
     else:
         return
 
@@ -68,137 +68,137 @@ def Santa_inquisicion(t2,t3,t4):
 if __name__ == "__main__":
 
     # Pide numero de filas y de columnas
-    t1 = int(input("Ingresa el numero de filas: "))
-    t2 = int(input("Ingresa el numero de columnas: "))
+    This_one_is_for_my_one_and_only_true_love = int(input("Ingresa el numero de columnas: "))
+    Princess_Peach = int(input("Ingresa el numero de filas: "))
 
     # Crea una lista vacia
-    t3 = []
+    Peach,_youre_so_cool = []
 
     # Establece el numero de matrices
-    t4 = int(input("numero de matrices: "))
+    And_with_my_star_were_gonna_rule = int(input("numero de matrices: "))
 
     # Pide la operacion a realizar
-    t12 = str(input("presione S para sumar la matriz y R para restar la matriz: "))
+    Peach_understand = str(input("presione S para sumar la matriz y R para restar la matriz: "))
 
 
     
-    # crea un bucle con el rango de t4
-    for x in range(t4):
+    # crea un bucle con el rango de And_with_my_star_were_gonna_rule
+    for x in range(And_with_my_star_were_gonna_rule):
 
         # Crea una lista vacia
-        t5 = []
+        Im_gonna_love_you_til_the_very_end = []
 
-        # crea un bucle con el rango de t1
-        for y in range(t1):
+        # crea un bucle con el rango de Princess_Peach
+        for y in range(Princess_Peach):
 
             # Crea una lista vacia
-            t6 = []
+            Peaches_Peaches_Peaches_Peaches_Peaches = []
 
-            # crea un bucle con el rango de t2
-            for z in range(t2):
+            # crea un bucle con el rango de This_one_is_for_my_one_and_only_true_love
+            for z in range(This_one_is_for_my_one_and_only_true_love):
 
                 # Pide un valor y lo vuelve flotante
-                t7 = float(input(f"Matriz [{x+1}] fila [{y+1}] columna [{z+1}]: "))
+                I_love_you_oh = float(input(f"Matriz [{x+1}] fila [{y+1}] columna [{z+1}]: "))
 
-                # Añade el flotante a la lista t6
-                t6.append(t7)
+                # Añade el flotante a la lista Peaches_Peaches_Peaches_Peaches_Peaches
+                Peaches_Peaches_Peaches_Peaches_Peaches.append(I_love_you_oh)
 
-            # Añade la lista t6 a la lista t5
-            t5.append(t6)
+            # Añade la lista Peaches_Peaches_Peaches_Peaches_Peaches a la lista Im_gonna_love_you_til_the_very_end
+            Im_gonna_love_you_til_the_very_end.append(Peaches_Peaches_Peaches_Peaches_Peaches)
 
-        # Añade la lista t5 a la lista t3    
-        t3.append(t5)
+        # Añade la lista Im_gonna_love_you_til_the_very_end a la lista Peach,_youre_so_cool    
+        Peach,_youre_so_cool.append(Im_gonna_love_you_til_the_very_end)
 
 
     # Llama a la Santa inquisicion que es una funcion
-    Santa_inquisicion(t1,t3,t4)
+    Santa_inquisicion(Princess_Peach,Peach,_youre_so_cool,And_with_my_star_were_gonna_rule)
 
-    # Busca si en t12 hay una s
-    if "s" in t12:
+    # Busca si en Peach_understand hay una s
+    if "s" in Peach_understand:
 
         # Crea una lista vacia
-        t8 = []
+        Mario_Luigi_and_a_Donkey_Kong_too = []
 
         # Define un flotante con valor 0
-        t11 = float(0)
+        Princess_Peach_at_the_end_of_the_line = float(0)
 
-        # Bucle for en el rango de t1
-        for x in range(t1):
+        # Bucle for en el rango de Princess_Peach
+        for x in range(Princess_Peach):
 
             # Crea una lista vacia
-            t9 = []
+            A_thousand_troops_of_Koopas_couldnt_keep_me_from_you = []
 
-            # Bucle for en el rango de t2
-            for y in range(t2):
+            # Bucle for en el rango de This_one_is_for_my_one_and_only_true_love
+            for y in range(This_one_is_for_my_one_and_only_true_love):
 
                 # Crea una lista vacia
-                t10 = []
+                Ill_make_you_mine_oh = []
 
-                # Bucle for en el rango de t4
-                for z in range(t4):
+                # Bucle for en el rango de And_with_my_star_were_gonna_rule
+                for z in range(And_with_my_star_were_gonna_rule):
 
-                    # Suma el valor de t3 con respecto a los bucles for (x,y,z)
-                    t11 += (t3[z][x][y])
+                    # Suma el valor de Peach,_youre_so_cool con respecto a los bucles for (x,y,z)
+                    Princess_Peach_at_the_end_of_the_line += (Peach,_youre_so_cool[z][x][y])
 
-                # Añade t11 a la lista t10
-                t10.append(t11)
+                # Añade Princess_Peach_at_the_end_of_the_line a la lista Ill_make_you_mine_oh
+                Ill_make_you_mine_oh.append(Princess_Peach_at_the_end_of_the_line)
 
-                # Restablece el valor de t11 a cero
-                t11 = 0
+                # Restablece el valor de Princess_Peach_at_the_end_of_the_line a cero
+                Princess_Peach_at_the_end_of_the_line = 0
 
-                # Añade t10 a la lista t9   
-                t9.append(t10)    
+                # Añade Ill_make_you_mine_oh a la lista A_thousand_troops_of_Koopas_couldnt_keep_me_from_you   
+                A_thousand_troops_of_Koopas_couldnt_keep_me_from_you.append(Ill_make_you_mine_oh)    
 
-            # Añade t9 a la lista t8
-            t8.append(t9)
+            # Añade A_thousand_troops_of_Koopas_couldnt_keep_me_from_you a la lista Mario_Luigi_and_a_Donkey_Kong_too
+            Mario_Luigi_and_a_Donkey_Kong_too.append(A_thousand_troops_of_Koopas_couldnt_keep_me_from_you)
     else:
 
         # Crea una lista vacia
-        t8 = []
+        Mario_Luigi_and_a_Donkey_Kong_too = []
 
         # Define un flotante con valor 0
-        t11 = float(0)
+        Princess_Peach_at_the_end_of_the_line = float(0)
 
-        # Bucle for en el rango de t1
-        for x in range(t1):
+        # Bucle for en el rango de Princess_Peach
+        for x in range(Princess_Peach):
 
             # Crea una lista vacia
-            t9 = []
+            A_thousand_troops_of_Koopas_couldnt_keep_me_from_you = []
 
-            # Bucle for en el rango de t2
-            for y in range(t2):
+            # Bucle for en el rango de This_one_is_for_my_one_and_only_true_love
+            for y in range(This_one_is_for_my_one_and_only_true_love):
 
                 # Crea una lista vacia
-                t10 = []
+                Ill_make_you_mine_oh = []
 
-                # Bucle for en el rango de t4
-                for z in range(t4):
+                # Bucle for en el rango de And_with_my_star_were_gonna_rule
+                for z in range(And_with_my_star_were_gonna_rule):
 
-                    # Resta el valor de t3 con respecto a los bucles for (x,y,z)
-                    t11 -= (t3[z][x][y])
+                    # Resta el valor de Peach,_youre_so_cool con respecto a los bucles for (x,y,z)
+                    Princess_Peach_at_the_end_of_the_line -= (Peach,_youre_so_cool[z][x][y])
 
                 # Añade el valor del numero de la primera matriz mulplicado por dos, debido que al entrar al bucle se resta
-                t11 += 2*(t3[0][x][y])
+                Princess_Peach_at_the_end_of_the_line += 2*(Peach,_youre_so_cool[0][x][y])
 
-                # Añade t11 a la lista t10
-                t10.append(t11)
+                # Añade Princess_Peach_at_the_end_of_the_line a la lista Ill_make_you_mine_oh
+                Ill_make_you_mine_oh.append(Princess_Peach_at_the_end_of_the_line)
 
-                # Restablece el valor de t11 a cero
-                t11 = 0
+                # Restablece el valor de Princess_Peach_at_the_end_of_the_line a cero
+                Princess_Peach_at_the_end_of_the_line = 0
 
-                # Añade t10 a la lista t9
-                t9.append(t10)    
+                # Añade Ill_make_you_mine_oh a la lista A_thousand_troops_of_Koopas_couldnt_keep_me_from_you
+                A_thousand_troops_of_Koopas_couldnt_keep_me_from_you.append(Ill_make_you_mine_oh)    
 
-            # Añade t9 a la lista t8
-            t8.append(t9)
+            # Añade A_thousand_troops_of_Koopas_couldnt_keep_me_from_you a la lista Mario_Luigi_and_a_Donkey_Kong_too
+            Mario_Luigi_and_a_Donkey_Kong_too.append(A_thousand_troops_of_Koopas_couldnt_keep_me_from_you)
 
     # Imprime un doble espacio para diferenciar las matrices
     print(" ")
     print(" ")
 
-    # Imprime la matriz t8 en filas
-    for y in range(t1):
-        print((t8[y]))
+    # Imprime la matriz Mario_Luigi_and_a_Donkey_Kong_too en filas
+    for y in range(Princess_Peach):
+        print((Mario_Luigi_and_a_Donkey_Kong_too[y]))
 ```
 2. Desarrolle un programa que permita realizar el [producto de matrices](https://es.wikipedia.org/wiki/Multiplicaci%C3%B3n_de_matrices). El programa debe validar las condiciones necesarias para ejecutar la operación.
 
