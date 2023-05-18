@@ -1,5 +1,4 @@
-# Reto_11
-
+# Reto_11 / PD: Capaz alguien llore cuando vea este codigo
 1. Desarrolle un programa que permita realizar la [suma/resta de matrices](https://es.wikipedia.org/wiki/Adici%C3%B3n_matricial). El programa debe validar las condiciones necesarias para ejecutar la operación.
 ```python
 # Funcion para imprimir las matrices
