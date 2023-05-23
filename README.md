@@ -298,6 +298,73 @@ if __name__ == "__main__":
 3. Desarrolle un programa que permita obtener la  [matriz transpuesta](https://es.wikipedia.org/wiki/Matriz_transpuesta) de una matriz ingresada. El programa debe validar las condiciones necesarias para ejecutar la operación.
 ```python
 
+if __name__ == "__main__":
+
+    # Pide numero de filas y de columnas, de la matriz 1
+    t1 = int(input("Ingresa el numero de filas de la matriz: "))
+    t2 = int(input("Ingresa el numero de columnas de la matriz: "))
+
+    # Crea una lista vacia
+    t3 = []
+
+
+    # crea un bucle con el rango de t1
+    for y in range(t1):
+
+        # Crea una lista vacia
+        t6 = []
+
+         # crea un bucle con el rango de t2
+        for z in range(t2):
+
+            # Pide un valor y lo vuelve flotante
+            t7 = float(input(f"fila [{y+1}] columna [{z+1}]: "))
+
+            # Añade el flotante a la lista t6
+            t6.append(t7)
+
+        # Añade la lista t6 a la lista t3
+        t3.append(t6)
+
+
+    # imprime dos espacion entre las matrices
+    print(" ")
+    print(" ")
+    
+    # Imprime la matriz t3 en filas
+    for y in range(t1):
+        print(t3[y])
+    
+    # Crea una lista vacia
+    t17 = []
+    
+    # crea un bucle con el rango de t2
+    for y in range(t2):
+
+        # Crea una lista vacia
+        t6 = []
+
+        # crea un bucle con el rango de t15
+        for z in range(t1):
+
+            # Pide un valor y lo vuelve flotante
+            t7 = t3[z][y]
+
+            # Añade t7 a la lista t6
+            t6.append(t7)
+
+        # Añade la lista t6 a la lista t17
+        t17.append(t6)
+
+        
+    # imprime dos espacion entre las matrices
+    print(" ")
+    print(" ")
+
+
+    # Imprime la matriz t17 en filas
+    for y in range(t2):
+        print(t17[y])
 ```
 4. Desarrollar un programa que sume los elementos de una columna dada de una matriz.
 ```python
