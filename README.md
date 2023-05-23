@@ -199,7 +199,6 @@ if __name__ == "__main__":
 ```
 2. Desarrolle un programa que permita realizar el [producto de matrices](https://es.wikipedia.org/wiki/Multiplicaci%C3%B3n_de_matrices). El programa debe validar las condiciones necesarias para ejecutar la operación.
 ```python
-
 if __name__ == "__main__":
 
     # Pide numero de filas y de columnas, de la matriz 1
@@ -297,7 +296,6 @@ if __name__ == "__main__":
 ```
 3. Desarrolle un programa que permita obtener la  [matriz transpuesta](https://es.wikipedia.org/wiki/Matriz_transpuesta) de una matriz ingresada. El programa debe validar las condiciones necesarias para ejecutar la operación.
 ```python
-
 if __name__ == "__main__":
 
     # Pide numero de filas y de columnas, de la matriz 1
@@ -346,8 +344,6 @@ if __name__ == "__main__":
 
         # crea un bucle con el rango de t15
         for z in range(t1):
-
-            # Pide un valor y lo vuelve flotante
             t7 = t3[z][y]
 
             # Añade t7 a la lista t6
