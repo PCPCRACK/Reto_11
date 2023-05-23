@@ -198,9 +198,107 @@ if __name__ == "__main__":
         print((Mario_Luigi_and_a_Donkey_Kong_too[y]))
 ```
 2. Desarrolle un programa que permita realizar el [producto de matrices](https://es.wikipedia.org/wiki/Multiplicaci%C3%B3n_de_matrices). El programa debe validar las condiciones necesarias para ejecutar la operación.
+```python
 
+if __name__ == "__main__":
+
+    # Pide numero de filas y de columnas, de la matriz 1
+    t1 = int(input("Ingresa el numero de filas de la matriz 1: "))
+    t2 = int(input("Ingresa el numero de columnas de la matriz 1: "))
+
+    # Imprime el valor determinado de la matriz 2 en cuanto a filas
+    print(f"el numero de filas de la matriz 2 es {t2}: ")
+
+     # Pide numero columnas de la matriz 2
+    t15 = int(input("Ingresa el numero de columnas de la matriz 2: "))
+ 
+    # Crea una lista vacia
+    t3 = []
+
+
+    # crea un bucle con el rango de t1
+    for y in range(t1):
+
+        # Crea una lista vacia
+        t6 = []
+
+         # crea un bucle con el rango de t2
+        for z in range(t2):
+
+            # Pide un valor y lo vuelve flotante
+            t7 = float(input(f"Matriz [{1}] fila [{y+1}] columna [{z+1}]: "))
+
+            # Añade el flotante a la lista t6
+            t6.append(t7)
+
+        # Añade la lista t6 a la lista t3
+        t3.append(t6)
+
+    
+    # crea un bucle con el rango de t2
+    for y in range(t2):
+
+        # Crea una lista vacia
+        t6 = []
+
+        # crea un bucle con el rango de t15
+        for z in range(t15):
+
+            # Pide un valor y lo vuelve flotante
+            t7 = float(input(f"Matriz [{2}] fila [{y+1}] columna [{z+1}]: "))
+
+            # Añade el flotante a la lista t6
+            t6.append(t7)
+
+        # Añade la lista t6 a la lista t3
+        t3.append(t6)
+
+
+    # Imprime la matriz t3 en filas
+    for y in range(t1+t2):
+        print(t3[y])
+
+    # Crea una lista vacia
+    t17 = []
+
+    # crea un bucle con el rango de t1
+    for x in range(t1):
+
+        # Crea una lista vacia
+        t6 = []
+        
+        # crea un bucle con el rango de t15
+        for f in range(t15):
+
+            # un contador igual a cero
+            n = 0
+            
+            # crea un bucle con el rango de t15
+            for y in range(t2):
+                z = t3[x][y] * t3[t1+y][f]
+
+                # n suma el valor de z
+                n += z
+                
+            # Añade el flotante a la lista t6
+            t6.append(n)
+            
+        # Añade la lista t6 a la lista t17
+        t17.append(t6)
+        
+    # imprime dos espacion entre las matrices
+    print(" ")
+    print(" ")
+
+
+    # Imprime la matriz t17 en filas
+    for y in range(t1):
+        print(t17[y])
+```
 3. Desarrolle un programa que permita obtener la  [matriz transpuesta](https://es.wikipedia.org/wiki/Matriz_transpuesta) de una matriz ingresada. El programa debe validar las condiciones necesarias para ejecutar la operación.
+```python
 
+```
 4. Desarrollar un programa que sume los elementos de una columna dada de una matriz.
 ```python
 if __name__ == "__main__":
