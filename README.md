@@ -273,14 +273,14 @@ if __name__ == "__main__":
             # un contador igual a cero
             n = 0
             
-            # crea un bucle con el rango de t15
+            # crea un bucle con el rango de t2
             for y in range(t2):
                 z = t3[x][y] * t3[t1+y][f]
 
                 # n suma el valor de z
                 n += z
                 
-            # Añade el flotante a la lista t6
+            # Añade n a la lista t6
             t6.append(n)
             
         # Añade la lista t6 a la lista t17
